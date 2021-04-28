@@ -10,6 +10,12 @@ function ListaService($http) {
     exec_GET: () => {
       return $http.get(`${BASE_URL}/lista`).then(getResponse, getError);
     },
+    exec_GET_BY_ID: (id) => {
+      return $http.get(`${BASE_URL}/lista/${id}`).then(getResponse, getError);
+    },
+    exec_DELETE: (id) => {
+      return $http.delete(`${BASE_URL}/lista/${id}`).then(getResponse, getError);
+    },
   };
 
   function getResponse(response) {

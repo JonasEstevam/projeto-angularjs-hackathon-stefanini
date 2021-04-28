@@ -39,12 +39,13 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" ng-init="vm.getPageInfo()">
         <div class="col">
-            <img src={{vm.movie.medium_cover_image}} class="img-fluid" alt="Responsive image">
+            <img src={{vm.movie.medium_cover_image}} class="img-fluid" alt="Movie cover image">
 
-            <button style="width: 68%;" type="button" class="btn btn-info">Adicionar à lista</button>
-            <a class="btn btn-success" href="https://www.youtube.com/watch/?v={{vm.movie.yt_trailer_code}}"
+            <button style="width: 68%;" type="button" ng-class="vm.buttonClass"
+                ng-click="vm.list()">{{vm.buttonText}}</button>
+            <a class="btn btn-info" href="https://www.youtube.com/watch/?v={{vm.movie.yt_trailer_code}}"
                 target="_blank">
                 Assistir trailer
             </a>
@@ -65,8 +66,8 @@
             </div>
             <div class="col" id="suggestions">
                 <div id='cards' ng-repeat="suggestion in vm.suggestions">
-                    <movie-card ng-click="vm.mostrarDetalhe(suggestion.id)" width="'8rem'" id="cards"
-                        imgsrc="suggestion.medium_cover_image" title="suggestion.title" id="suggestion.id"></movie-card>
+                    <movie-card width="'8rem'" imgsrc="suggestion.medium_cover_image" title="suggestion.title"
+                        id="suggestion.id"></movie-card>
                 </div>
             </div>
         </div>

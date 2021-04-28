@@ -1,1 +1,1 @@
-angular.module("app", ["ngRoute", "youtube-embed"]);
+angular.module("app", ["ngRoute"]);

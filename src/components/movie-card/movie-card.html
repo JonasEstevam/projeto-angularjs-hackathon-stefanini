@@ -16,6 +16,8 @@
         <p style="font-size: 0.8rem;" class="card-text">{{vm.title}}
         </p>
     </div>
-    <button ng-if="vm.showTitle" id="add-to-list-button" type="button" class="btn btn-outline-success"
-        ng-click="vm.addToList(vm.id, vm.title, vm.imgsrc)">Adicionar à lista</button>
+
+    <button ng-if="vm.showTitle" id="add-to-list-button" type="button" ng-class="vm.buttonClass"
+        ng-click="vm.list()">{{vm.buttonText}}</button>
+
 </div>

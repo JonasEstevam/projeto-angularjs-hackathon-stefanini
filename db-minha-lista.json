@@ -1,14 +1,64 @@
 {
   "lista": [
     {
-      "id": 16716,
-      "name": "Hara-Kiri (1962)",
-      "cover": "https://yts.mx/assets/images/movies/harakiri_1962/medium-cover.jpg"
+      "id": 1850,
+      "name": "Léon: The Professional (1994)",
+      "cover": "https://yts.mx/assets/images/movies/Leon_The_Professional_Extended_1994/medium-cover.jpg"
     },
     {
-      "id": 3304,
-      "name": "The Godfather (1972)",
-      "cover": "https://yts.mx/assets/images/movies/The_Godfather_1972/medium-cover.jpg"
+      "id": 7679,
+      "name": "City of God (2002)",
+      "cover": "https://yts.mx/assets/images/movies/city_of_god_2002/medium-cover.jpg"
+    },
+    {
+      "id": 2232,
+      "name": "Once Upon a Time in America (1984)",
+      "cover": "https://yts.mx/assets/images/movies/Once_Upon_a_Time_in_America_1984/medium-cover.jpg"
+    },
+    {
+      "id": 2862,
+      "name": "Star Wars: Episode V - The Empire Strikes Back (1980)",
+      "cover": "https://yts.mx/assets/images/movies/Star_Wars_Episode_V_The_Empire_Strikes_Back_1980/medium-cover.jpg"
+    },
+    {
+      "id": 7667,
+      "name": "Spirited Away (2001)",
+      "cover": "https://yts.mx/assets/images/movies/spirited_away_2001/medium-cover.jpg"
+    },
+    {
+      "id": 353,
+      "name": "Back to the Future (1985)",
+      "cover": "https://yts.mx/assets/images/movies/Back_to_the_Future_1985/medium-cover.jpg"
+    },
+    {
+      "id": 2858,
+      "name": "Star Wars: Episode IV - A New Hope (1977)",
+      "cover": "https://yts.mx/assets/images/movies/Star_Wars_Episode_IV_A_New_Hope_1977/medium-cover.jpg"
+    },
+    {
+      "id": 22032,
+      "name": "Holbrook/Twain: An American Odyssey (2014)",
+      "cover": "https://yts.mx/assets/images/movies/holbrooktwain_an_american_odyssey_2014/medium-cover.jpg"
+    },
+    {
+      "id": 15527,
+      "name": "Top Gear Africa Special, Part 1 (2013)",
+      "cover": "https://yts.mx/assets/images/movies/top_gear_africa_special_part_1_2013/medium-cover.jpg"
+    },
+    {
+      "id": 9717,
+      "name": "Natsamrat (2016)",
+      "cover": "https://yts.mx/assets/images/movies/natsamrat_2016/medium-cover.jpg"
+    },
+    {
+      "id": 3305,
+      "name": "The Godfather: Part II (1974)",
+      "cover": "https://yts.mx/assets/images/movies/The_Godfather_Part_II_1974/medium-cover.jpg"
+    },
+    {
+      "id": 29089,
+      "name": "A Twelve-Year Night",
+      "cover": "https://yts.mx/assets/images/movies/a_twelve_year_night_2018/medium-cover.jpg"
     }
   ]
 }

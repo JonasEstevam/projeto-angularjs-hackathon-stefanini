@@ -1,0 +1,9 @@
+<div class="container" ng-init="vm.getMovies()">
+    <div class="row">
+        <div class="col" ng-repeat="movie in vm.movies">
+            <movie-card width="'10rem'" id="movie.id" imgsrc="movie.cover" title="movie.name">
+            </movie-card>
+        </div>
+    </div>
+
+</div>
