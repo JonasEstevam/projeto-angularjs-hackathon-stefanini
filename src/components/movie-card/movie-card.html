@@ -1,0 +1,21 @@
+<style>
+    .card {
+        margin-bottom: 10%;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .card:hover {
+        transform: scale(1.02);
+    }
+</style>
+
+<div class="card" ng-style="vm.cardStyle">
+    <img class="card-img-top" src='{{vm.imgsrc}}' alt="Card image cap" ng-click="vm.mostrarDetalhe(vm.id)">
+    <div class="card-body" ng-if="vm.showTitle">
+        <p style="font-size: 0.8rem;" class="card-text">{{vm.title}}
+        </p>
+    </div>
+    <button ng-if="vm.showTitle" id="add-to-list-button" type="button" class="btn btn-outline-success"
+        ng-click="vm.addToList(vm.id, vm.title, vm.imgsrc)">Adicionar à lista</button>
+</div>

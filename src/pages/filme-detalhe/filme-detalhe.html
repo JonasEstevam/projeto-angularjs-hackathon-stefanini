@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .col {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #genres-div {
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        #suggestions {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+
+        .btn {
+            width: 68%;
+            margin-top: 2%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="col">
+            <img src={{vm.movie.medium_cover_image}} class="img-fluid" alt="Responsive image">
+
+            <button style="width: 68%;" type="button" class="btn btn-info">Adicionar à lista</button>
+            <a class="btn btn-success" href="https://www.youtube.com/watch/?v={{vm.movie.yt_trailer_code}}"
+                target="_blank">
+                Assistir trailer
+            </a>
+        </div>
+
+        <div class="col">
+            <h2 style="text-align: center;">{{vm.movie.title}}</h2>
+            <p>{{vm.movie.year}}</p>
+            <div id="genres-div">
+                <p ng-repeat="genre in vm.movie.genres">{{genre}}</p>
+            </div>
+            <p style="text-align: center;" class="paragraph long-text">{{vm.movie.description_full}}</p>
+        </div>
+
+        <div class="col">
+            <div>
+                <h4 style="text-align: center;">Sugestões</h4>
+            </div>
+            <div class="col" id="suggestions">
+                <div id='cards' ng-repeat="suggestion in vm.suggestions">
+                    <movie-card ng-click="vm.mostrarDetalhe(suggestion.id)" width="'8rem'" id="cards"
+                        imgsrc="suggestion.medium_cover_image" title="suggestion.title" id="suggestion.id"></movie-card>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
