@@ -3,7 +3,7 @@ Projeto feito para praticar AngularJS durante o hackathon da Stefanini
 
 
 # Como usar
-## Requisitos 
+## Pré-requisitos 
 * json-server (https://github.com/typicode/json-server)
 * live-server (https://github.com/tapio/live-server)
 
